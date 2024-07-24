@@ -2,5 +2,4 @@ node_modules
 dist
 dist-storybook
 .npmrc
-yarn.lock
 package-lock.json

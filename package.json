@@ -12,7 +12,7 @@
     "build": "yarn build-css && yarn copy-assets && yarn build-storybook-2",
     "build-css": "yarn clean && yarn sass && yarn sass-mini",
     "build-storybook-2": "yarn build-storybook -c .storybook -o dist-storybook/sb",
-    "copy-assets": "xcopy /s /e /i /q assets dist\\assets",
+    "copy-assets": "shx cp -r assets dist/assets",
     "clean": "rimraf dist dist-storybook*",
     "sass-mini": "sass scss/index.scss dist/css/design-system.css --style compressed",
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
@@ -38,6 +38,7 @@
     "@storybook/html": "^8.2.2",
     "@storybook/html-vite": "^8.2.2",
     "@storybook/test": "^8.2.2",
+    "shx": "^0.3.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   },
