@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
+    "cz": "git-cz",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build-dev": "sass --watch scss/index.scss dist/css/design-system.css --style compressed",
@@ -14,17 +15,19 @@
     "build-storybook-2": "yarn build-storybook -c .storybook -o dist-storybook/sb",
     "copy-assets": "shx cp -r assets dist/assets",
     "clean": "rimraf dist dist-storybook*",
-    "sass-mini": "sass scss/index.scss dist/css/design-system.css --style compressed",
+    "sass-mini": "sass **/*.scss dist/css/ --style compressed",
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
     "sass": "sass scss/index.scss:dist/css/design-system-verbose.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "commitizen": "^4.2.4",
     "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-uglifycss": "^1.1.0",
     "init": "^0.1.2",
     "sandbox": "^0.8.6",
     "sass": "^1.77.8",
