@@ -1,0 +1,58 @@
+# This script requires a Personal access token to be created. The token
+# should be added as a repository secret called "RELEASE_PLEASE" under
+# https://github.com/OWNER/REPO/settings/secrets/actions
+#
+# NB: Fine grained PATs do NOT work, only classic PATs work at this time
+# The permissions required are:
+# repo
+# write-packages (for writing to the github registry)
+
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Install npm packages
+        run: yarn --frozen-lockfile
+
+      - name: Build package
+        run: yarn build
+
+      - name: Test package
+        run: yarn test
+
+      - name: Release Please
+        uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          command: manifest
+          token: ${{secrets.REPO_TOKEN}}
+
+      - name: Report ref
+        if: ${{ steps.release.outputs.release_created }}
+        run: echo ${{ steps.release.outputs.tag_name }}
+
+      # Publish to Github's NPM registry
+      - name: Publish to Github NPM registry
+        if: ${{ steps.release.outputs.release_created }}
+        run: yarn publish --access public dist
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.REPO_TOKEN }}
+
+      - name: Publish documentation
+        if: ${{ steps.release.outputs.release_created }}
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.REPO_TOKEN }}
+          publish_dir: './dist-storybook/sb'
