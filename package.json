@@ -9,7 +9,7 @@
     "cz": "git-cz",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build-dev": "sass --watch scss/index.scss dist/css/design-system.css --style compressed",
+    "build-dev": "yarn gulp && yarn copy-assets && yarn build-storybook-2",
     "build": "yarn build-css && yarn copy-assets && yarn build-storybook-2",
     "build-css": "yarn clean && yarn sass && yarn sass-mini",
     "build-storybook-2": "yarn build-storybook -c .storybook -o dist-storybook/sb",

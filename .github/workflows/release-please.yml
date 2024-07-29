@@ -34,7 +34,7 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Build package
-        run: yarn build
+        run: yarn build-dev
 
       - name: Release Please
         uses: google-github-actions/release-please-action@v4
