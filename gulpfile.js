@@ -25,3 +25,4 @@ function watchFiles() {
 }
 
 exports.default = series(compileSass, watchFiles);
+exports.compileSass = series(compileSass);
