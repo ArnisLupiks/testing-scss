@@ -4,6 +4,18 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.1.0](https://github.com/ArnisLupiks/testing-scss/compare/design-system-v1.0.1...design-system-v1.1.0) (2024-07-31)
+
+
+### Features
+
+* **config:** 1 here is new changes ([#16](https://github.com/ArnisLupiks/testing-scss/issues/16)) ([e0cb4ab](https://github.com/ArnisLupiks/testing-scss/commit/e0cb4abdf65786dbefabb97912f04aa4d5354164))
+
+
+### Bug Fixes
+
+* **config:** 125 somehting happened ([#14](https://github.com/ArnisLupiks/testing-scss/issues/14)) ([6ed99d9](https://github.com/ArnisLupiks/testing-scss/commit/6ed99d934e919f5b2769cfd78e4fbd6e9df6cd0e))
+
 ## [1.0.1](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.0.0...ul-ds-v1.0.1) (2024-07-31)
 
 
