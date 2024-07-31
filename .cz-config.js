@@ -25,7 +25,8 @@ module.exports = {
     ],
   
     scopes: [
-      {name: 'new-feature'},
+      {name: 'header'},
+      {name: 'config'},
       {name: 'core'},
       {name: 'docs'},
       {name: 'setup'},
@@ -34,7 +35,6 @@ module.exports = {
     appendBranchNameToCommitMessage: false,
     allowTicketNumber: true,
     isTicketNumberRequired: true,
-    ticketNumberPrefix: 'TEL-',
     // Limit ticket number to numbers
     ticketNumberRegExp: '\\d+',
     // Append ticket number to commit message
@@ -56,9 +56,8 @@ module.exports = {
       subject: 'Write a SHORT, IMPERATIVE tense description of the change:\n',
       body: 'Provide a LONGER description of the change (optional). Use "|" to break new line:\n',
       breaking: 'List any BREAKING CHANGES (optional):\n',
-      footer: 'List any JIRA ISSUES CLOSED by this change (optional). E.g.: TEL-1100, TEL-1200:\n',
+      footer: 'List any AZURE BOARDS ISSUES CLOSED by this change (optional). E.g.: AB#1234, AB#12344:\n',
       confirmCommit: 'Are you sure you want to proceed with the commit above?',
-      ticketNumber: 'Enter ticket number (digits only). Prefix "TEL-" will be added automatically:',
     },
     allowCustomScopes: false,
     allowBreakingChanges: ['feat', 'fix', 'refactor'],
