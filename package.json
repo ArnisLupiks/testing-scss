@@ -3,6 +3,10 @@
   "version": "1.2.0",
   "description": "",
   "main": "index.css",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ArnisLupiks/testing-scss.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
