@@ -1,8 +1,10 @@
 {
-  "name": "ul-ds",
+  "name": "@underwriters-labs/design-system",
   "version": "1.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "index.css",
+  "license": "MIT",
+  "author": "UL",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
@@ -20,8 +22,6 @@
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
     "sass": "sass scss/index.scss:dist/css/design-system-verbose.css"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
