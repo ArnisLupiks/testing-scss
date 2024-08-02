@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.2.4](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.2.3...ul-ds-v1.2.4) (2024-08-02)
+
+
+### Bug Fixes
+
+* **config:** 123 added rrepo secret into pipeline ([#27](https://github.com/ArnisLupiks/testing-scss/issues/27)) ([f9d295c](https://github.com/ArnisLupiks/testing-scss/commit/f9d295ce99653eba9d143889f7fe57b15d478079))
+
 ## [1.2.3](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.2.2...ul-ds-v1.2.3) (2024-08-02)
 
 
