@@ -51,7 +51,7 @@ jobs:
       # Publish to Github's NPM registry
       - name: Publish to Github NPM registry
         if: ${{ steps.release.outputs.release_created }}
-        run: yarn publish --access public gh release upload ${{ steps.release.outputs.tag_name }}
+        run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
