@@ -16,6 +16,7 @@ $dropdown-item-padding-small: $spacing-sm * 0.9 $spacing-md;
 $dropdown-item-color: $text-primary;
 $dropdown-item-hover-color: $ul-black;
 $dropdown-item-hover-bg: $secondary;
+$random-collored-dropdown: false;
 
 .#{$prefix}dropdown {
   background: $dropdown-background;
