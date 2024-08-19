@@ -44,11 +44,6 @@ jobs:
           config-file: release-please-config.json
           manifest-file: .release-please-manifest.json
 
-      - name: Debug Release Outputs
-        run: | 
-          echo ${{ steps.release.outputs.release_created }}
-          echo ${{ toJson(steps.release.outputs) }}
-
       - name: Report ref
         if: ${{ steps.release.outputs.release_created }}
         run: echo ${{ steps.release.outputs.tag_name }}
