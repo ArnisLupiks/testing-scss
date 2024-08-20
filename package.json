@@ -23,7 +23,8 @@
     "clean": "rimraf dist dist-storybook*",
     "sass-mini": "sass **/*.scss dist/css/ --style compressed",
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
-    "sass": "sass scss/index.scss:dist/css/design-system-verbose.css"
+    "sass": "sass scss/index.scss:dist/css/design-system-verbose.css",
+    "prepublishOnly": "yarn build-css && yarn copy-assets"
   },
   "author": "",
   "license": "ISC",
@@ -142,5 +143,9 @@
     "commitizen": {
       "path": "./node_modules/cz-customizable"
     }
-  }
+  },
+  "files": [
+    "dist/",
+    "index.css"
+  ]
 }
