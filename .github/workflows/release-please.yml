@@ -45,18 +45,18 @@ jobs:
           manifest-file: .release-please-manifest.json
 
       - name: Report ref
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.release_created  == 'true' }}
         run: echo ${{ steps.release.outputs.tag_name }}
 
       # Publish to Github's NPM registry
       - name: Publish to Github NPM registry
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.release_created  == 'true' }}
         run: yarn publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish documentation
-        if: ${{ steps.release.outputs.release_created }}
+        if: ${{ steps.release.outputs.release_created  == 'true' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
