@@ -1,9 +1,12 @@
 {
   "name": "ul-ds",
-  "version": "1.3.0",
+  "version": "1.2.7",
   "description": "",
   "main": "index.css",
-  "repository": "github.com:ArnisLupiks/testing-scss.git",
+  "repository": {
+    "type": "git",
+    "url": "github.com:ArnisLupiks/testing-scss.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
