@@ -4,6 +4,35 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.4.0](https://github.com/ArnisLupiks/testing-scss/compare/tesing-scss-v1.3.5...tesing-scss-v1.4.0) (2024-08-20)
+
+
+### Features
+
+* **config:** 1 here is new changes ([#16](https://github.com/ArnisLupiks/testing-scss/issues/16)) ([e0cb4ab](https://github.com/ArnisLupiks/testing-scss/commit/e0cb4abdf65786dbefabb97912f04aa4d5354164))
+* **header:** 333 new styles ([#39](https://github.com/ArnisLupiks/testing-scss/issues/39)) ([daf4224](https://github.com/ArnisLupiks/testing-scss/commit/daf4224f983f180cddbecb41dda4c95df798d399))
+
+
+### Bug Fixes
+
+* **config:** 1 1 ([#33](https://github.com/ArnisLupiks/testing-scss/issues/33)) ([47ddf23](https://github.com/ArnisLupiks/testing-scss/commit/47ddf23039b91557177f327c07bbcd626fbcf123))
+* **config:** 1 added configuration into package.json ([#29](https://github.com/ArnisLupiks/testing-scss/issues/29)) ([1eefe81](https://github.com/ArnisLupiks/testing-scss/commit/1eefe81de7040dcd3fdfc247d1e6e9e8c91c2418))
+* **config:** 122 added better check in pipeline ([#38](https://github.com/ArnisLupiks/testing-scss/issues/38)) ([5cb3a25](https://github.com/ArnisLupiks/testing-scss/commit/5cb3a2558a2b0424dc077413374c060a50123b05))
+* **config:** 123 added rrepo secret into pipeline ([#27](https://github.com/ArnisLupiks/testing-scss/issues/27)) ([f9d295c](https://github.com/ArnisLupiks/testing-scss/commit/f9d295ce99653eba9d143889f7fe57b15d478079))
+* **config:** 125 somehting happened ([#14](https://github.com/ArnisLupiks/testing-scss/issues/14)) ([6ed99d9](https://github.com/ArnisLupiks/testing-scss/commit/6ed99d934e919f5b2769cfd78e4fbd6e9df6cd0e))
+* **config:** 2 ([#18](https://github.com/ArnisLupiks/testing-scss/issues/18)) ([5166763](https://github.com/ArnisLupiks/testing-scss/commit/51667635dc2f75fdfead8a4ae7aa177b488d4cd8))
+* **config:** 2 bla bla bla ([#31](https://github.com/ArnisLupiks/testing-scss/issues/31)) ([96704fd](https://github.com/ArnisLupiks/testing-scss/commit/96704fd43039059f28ae5424095667dccf71c1c6))
+* **config:** 2 boom ([#23](https://github.com/ArnisLupiks/testing-scss/issues/23)) ([abf8498](https://github.com/ArnisLupiks/testing-scss/commit/abf84987438cfeaf429a7fa1c0c8a3f5ac3a41de))
+* **config:** 2 meh ([#48](https://github.com/ArnisLupiks/testing-scss/issues/48)) ([4056fd6](https://github.com/ArnisLupiks/testing-scss/commit/4056fd6ee50ac19fdb1a36afe3f3ec0bb3710cb8))
+* **config:** 2 something ([#42](https://github.com/ArnisLupiks/testing-scss/issues/42)) ([96c50cb](https://github.com/ArnisLupiks/testing-scss/commit/96c50cb265b1b2b155a010da2fdaf7066b00f4e5))
+* **config:** 2 sss ([#50](https://github.com/ArnisLupiks/testing-scss/issues/50)) ([26d8b23](https://github.com/ArnisLupiks/testing-scss/commit/26d8b2340f396c97b5ffc25e1239c07e5c1b15cf))
+* **config:** 222 boom ([#52](https://github.com/ArnisLupiks/testing-scss/issues/52)) ([5681091](https://github.com/ArnisLupiks/testing-scss/commit/5681091271494df8c5b5e36e27c4ef5e491688ec))
+* **config:** 23 added new repository config ([#41](https://github.com/ArnisLupiks/testing-scss/issues/41)) ([02d9a04](https://github.com/ArnisLupiks/testing-scss/commit/02d9a04aad2f7c179abbdf94fb7c716c9b84fb25))
+* **config:** 3 some garbage fix ([#20](https://github.com/ArnisLupiks/testing-scss/issues/20)) ([f9d2c93](https://github.com/ArnisLupiks/testing-scss/commit/f9d2c93aeb4c27584d90a0257daa9584aa5481aa))
+* **config:** 323232 something added ([#25](https://github.com/ArnisLupiks/testing-scss/issues/25)) ([9060f06](https://github.com/ArnisLupiks/testing-scss/commit/9060f0689c96d3170b65d3da8364ed2a6a9a0fb0))
+* **header:** 11111 color ([#44](https://github.com/ArnisLupiks/testing-scss/issues/44)) ([5a369de](https://github.com/ArnisLupiks/testing-scss/commit/5a369de4112625a68dd10afc0d69e8fcce0cb15b))
+* **header:** 1111111 some stuff ([#46](https://github.com/ArnisLupiks/testing-scss/issues/46)) ([76d5dc7](https://github.com/ArnisLupiks/testing-scss/commit/76d5dc7ba2720d12a8644da03a755b30eb34db12))
+
 ## [1.3.5](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.3.4...ul-ds-v1.3.5) (2024-08-20)
 
 
