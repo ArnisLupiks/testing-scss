@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.4.1](https://github.com/ArnisLupiks/testing-scss/compare/tesing-scss-v1.4.0...tesing-scss-v1.4.1) (2024-08-20)
+
+
+### Bug Fixes
+
+* **config:** 232 ddddddd ([#54](https://github.com/ArnisLupiks/testing-scss/issues/54)) ([c61725b](https://github.com/ArnisLupiks/testing-scss/commit/c61725b0e02fee76f130831b0c327426ed858d09))
+
 ## [1.4.0](https://github.com/ArnisLupiks/testing-scss/compare/tesing-scss-v1.3.5...tesing-scss-v1.4.0) (2024-08-20)
 
 
