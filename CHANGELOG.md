@@ -4,6 +4,18 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.3.0](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.2.7...ul-ds-v1.3.0) (2024-08-20)
+
+
+### Features
+
+* **header:** 333 new styles ([#39](https://github.com/ArnisLupiks/testing-scss/issues/39)) ([daf4224](https://github.com/ArnisLupiks/testing-scss/commit/daf4224f983f180cddbecb41dda4c95df798d399))
+
+
+### Bug Fixes
+
+* **config:** 23 added new repository config ([#41](https://github.com/ArnisLupiks/testing-scss/issues/41)) ([02d9a04](https://github.com/ArnisLupiks/testing-scss/commit/02d9a04aad2f7c179abbdf94fb7c716c9b84fb25))
+
 ## [1.2.7](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.2.6...ul-ds-v1.2.7) (2024-08-20)
 
 
