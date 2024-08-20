@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.3.4](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.3.3...ul-ds-v1.3.4) (2024-08-20)
+
+
+### Bug Fixes
+
+* **config:** 2 meh ([#48](https://github.com/ArnisLupiks/testing-scss/issues/48)) ([4056fd6](https://github.com/ArnisLupiks/testing-scss/commit/4056fd6ee50ac19fdb1a36afe3f3ec0bb3710cb8))
+
 ## [1.3.3](https://github.com/ArnisLupiks/testing-scss/compare/ul-ds-v1.3.2...ul-ds-v1.3.3) (2024-08-20)
 
 
