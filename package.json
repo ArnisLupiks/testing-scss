@@ -25,9 +25,6 @@
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
     "sass": "sass scss/index.scss:dist/css/design-system-verbose.css"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
