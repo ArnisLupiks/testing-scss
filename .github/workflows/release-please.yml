@@ -51,7 +51,14 @@ jobs:
       # Publish to Github's NPM registry
       - name: Publish to Github NPM registry
         if: ${{ steps.release.outputs.release_created  == 'true' }}
-        run: yarn publish --access public
+        run: |
+          echo "Starting the publish process..."
+          if yarn publish --access public; then
+            echo "Publish successful!"
+          else
+            echo "Publish failed!" >&2
+            exit 1
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
