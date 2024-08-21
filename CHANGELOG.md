@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.5.8](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.7...testing-scss-v1.5.8) (2024-08-21)
+
+
+### Bug Fixes
+
+* **config:** 3 lskjdlasd ([#72](https://github.com/ArnisLupiks/testing-scss/issues/72)) ([37a2502](https://github.com/ArnisLupiks/testing-scss/commit/37a2502201efada3dfecac271bbdd1dfd8d192dd))
+
 ## [1.5.7](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.6...testing-scss-v1.5.7) (2024-08-21)
 
 
