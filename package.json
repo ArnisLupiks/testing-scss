@@ -1,7 +1,7 @@
 {
   "name": "@arnislupiks/testing-scss",
   "version": "1.5.5",
-  "description": "",
+  "description": "design system scss",
   "main": "index.css",
   "homepage": "https://github.com/arnislupiks/testing-scss#readme",
   "repository": {
@@ -9,7 +9,6 @@
     "url": "https://github.com/arnislupiks/testing-scss.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "gulp": "gulp",
     "gulp-compile": "gulp compileSass",
     "cz": "cz",
