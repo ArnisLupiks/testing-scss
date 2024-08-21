@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.5.6](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.5...testing-scss-v1.5.6) (2024-08-21)
+
+
+### Bug Fixes
+
+* **config:** 4 adsfasdfg ([#68](https://github.com/ArnisLupiks/testing-scss/issues/68)) ([9746cd5](https://github.com/ArnisLupiks/testing-scss/commit/9746cd5640d29efedab68593745028021c52afa4))
+
 ## [1.5.5](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.4...testing-scss-v1.5.5) (2024-08-21)
 
 
