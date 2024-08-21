@@ -6,7 +6,7 @@
   "homepage": "https://github.com/arnislupiks/testing-scss#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:arnislupiks/testing-scss.git"
+    "url": "https://github.com/arnislupiks/testing-scss.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
