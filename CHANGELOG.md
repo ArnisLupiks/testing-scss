@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.5.10](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.9...testing-scss-v1.5.10) (2024-08-22)
+
+
+### Bug Fixes
+
+* **config:** 3 changed package location ([#76](https://github.com/ArnisLupiks/testing-scss/issues/76)) ([ebcafc9](https://github.com/ArnisLupiks/testing-scss/commit/ebcafc9245d9bd82f3a18e34beb3a274cb96f182))
+
 ## [1.5.9](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.8...testing-scss-v1.5.9) (2024-08-22)
 
 
