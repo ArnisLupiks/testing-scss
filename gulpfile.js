@@ -8,7 +8,7 @@ const rename = require("gulp-rename");
 function compileSass() {
     return src('scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(dest('dist/css'))
+        .pipe(dest('dist'))
         .pipe(cleanCSS())
         .pipe(uglifycss({
             "maxLineLen": 80,
@@ -17,7 +17,7 @@ function compileSass() {
         .pipe(rename({
             suffix: '.min'
           }))
-        .pipe(dest('dist/css'));
+        .pipe(dest('dist'));
 }
 
 function watchFiles() {
