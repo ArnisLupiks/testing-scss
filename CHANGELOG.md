@@ -4,6 +4,14 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.6.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.11...testing-scss-v1.6.0) (2024-08-22)
+
+
+### Features
+
+* **header:** 1234 added icons to header component ([#80](https://github.com/ArnisLupiks/testing-scss/issues/80)) ([867c72a](https://github.com/ArnisLupiks/testing-scss/commit/867c72ae356c0a6f31629d2dcd1d342a0c649513))
+* **header:** 1245 add mat icons to header ([#83](https://github.com/ArnisLupiks/testing-scss/issues/83)) ([2eb9309](https://github.com/ArnisLupiks/testing-scss/commit/2eb93094cbeb3fa80c4fd8d2d3335827de4b4dba))
+
 ## [1.5.11](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.10...testing-scss-v1.5.11) (2024-08-22)
 
 
