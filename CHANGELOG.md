@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.5.9](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.8...testing-scss-v1.5.9) (2024-08-22)
+
+
+### Bug Fixes
+
+* **config:** 23323 changed dist folder ([#74](https://github.com/ArnisLupiks/testing-scss/issues/74)) ([bcbbe63](https://github.com/ArnisLupiks/testing-scss/commit/bcbbe63c442836097432c18bbbbd08d9927abbfc))
+
 ## [1.5.8](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.7...testing-scss-v1.5.8) (2024-08-21)
 
 
