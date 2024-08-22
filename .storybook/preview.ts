@@ -1,5 +1,5 @@
 import type { Preview } from "@storybook/html";
-import '../dist/css/index.css';
+import '../dist/index.css';
 
 const preview: Preview = {
   parameters: {
