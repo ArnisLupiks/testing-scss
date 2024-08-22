@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.5.11](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.10...testing-scss-v1.5.11) (2024-08-22)
+
+
+### Bug Fixes
+
+* **config:** 32 boom ([#78](https://github.com/ArnisLupiks/testing-scss/issues/78)) ([d4f6b2d](https://github.com/ArnisLupiks/testing-scss/commit/d4f6b2d50a2f3b788ac9b1c4620c87ab9b87b4f0))
+
 ## [1.5.10](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.9...testing-scss-v1.5.10) (2024-08-22)
 
 
