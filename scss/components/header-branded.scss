@@ -3,10 +3,6 @@
 @import '../variables/ultrus';
 @import '../mixins/tooltip';
 @import '../mixins/list';
-@import '../fonts/material-icons';
-@import '../fonts/material-icons-outlined';
-@import '../fonts/material-symbols';
-@import '../fonts/material-symbols-outlined';
 
 .#{$prefix}application-header {
   box-sizing: border-box;
