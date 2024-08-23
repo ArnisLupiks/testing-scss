@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.8.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.7.0...testing-scss-v1.8.0) (2024-08-23)
+
+
+### Features
+
+* **label:** add label component ([#86](https://github.com/ArnisLupiks/testing-scss/issues/86)) ([e00fa12](https://github.com/ArnisLupiks/testing-scss/commit/e00fa12651dbe8571ed95f7b3799af58aaf25fbc))
+
 ## [1.7.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.6.0...testing-scss-v1.7.0) (2024-08-23)
 
 
