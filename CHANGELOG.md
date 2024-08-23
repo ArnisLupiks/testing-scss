@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.7.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.6.0...testing-scss-v1.7.0) (2024-08-23)
+
+
+### Features
+
+* **config:** 1 gulp file able to change file url's ([#84](https://github.com/ArnisLupiks/testing-scss/issues/84)) ([76056b1](https://github.com/ArnisLupiks/testing-scss/commit/76056b1aea82d0ce5c8da9042ae73ee153012893))
+
 ## [1.6.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.5.11...testing-scss-v1.6.0) (2024-08-22)
 
 
