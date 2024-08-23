@@ -1,0 +1,113 @@
+@use "sass:map";
+@use 'sass:math';
+@use '../variables/variables';
+@import 'defaults';
+
+$label-bg: variables.$secondary;
+$label-fg: variables.$background-contrast;
+
+$label-border-color: $label-bg;
+$label-border-radius: variables.$border-radius;
+
+$label-font-size: 0.75rem;
+
+$label-colors: (
+  "default": (
+    "background": variables.$secondary,
+    "border-color": variables.$secondary,
+    "color": variables.$ul-black,
+  ),
+  "danger": (
+    "background": variables.$danger,
+    "border-color": variables.$danger,
+    "color": variables.$ul-white,
+  ),
+  "danger-light": (
+    "background": variables.$danger-light,
+    "border-color": variables.$danger-light,
+    "color": variables.$ul-red,
+  ),
+  "primary": (
+    "background": variables.$primary,
+    "border-color": variables.$primary,
+    "color": variables.$ul-white
+  ),
+  "primary-light": (
+    "background": variables.$primary-light,
+    "border-color": variables.$primary-light,
+    "color": variables.$primary
+  ),
+  "success": (
+    "background": variables.$success,
+    "border-color": variables.$success,
+    "color": variables.$ul-white
+  ),
+  "success-light": (
+    "background": variables.$success-light,
+    "border-color": variables.$success-light,
+    "color": variables.$success
+  ),
+  "warning": (
+    "background": variables.$warning,
+    "border-color": variables.$warning,
+    "color": variables.$ul-black
+  ),
+  "warning-light": (
+    "background": variables.$warning-light,
+    "border-color": variables.$warning-light,
+    "color": variables.$ul-black
+  ),
+  "info": (
+    "background": variables.$info,
+    "border-color": variables.$info,
+    "color": variables.$ul-white
+  ),
+  "info-light": (
+    "background": variables.$info-light,
+    "border-color": variables.$info-light,
+    "color": variables.$info
+  ),
+  "dark": (
+    "background": variables.$ul-black,
+    "border-color": variables.$ul-black,
+    "color": variables.$ul-white
+  ),
+  "light": (
+    "background": variables.$ul-white,
+    "border-color": variables.$secondary,
+    "color": variables.$ul-black
+  ),
+);
+
+@mixin label {
+  background: map.get(map.get($label-colors, "default"), "background");
+  border: pxtorem(1) solid map.get(map.get($label-colors, "default"), "border-color");
+  border-radius: $label-border-radius;
+  color: map.get(map.get($label-colors, "default"), "color");
+  display: inline-block;
+  font-size: $label-font-size;
+  min-width: 1rem;
+  padding: 0 0.2rem;
+  text-align: center;
+
+  @include defaults;
+
+  & {
+    margin-right: variables.$spacing-sm;
+  }
+
+  @each $color, $params in $label-colors {
+    &.-#{$color} {
+      background: map.get($params, "background");
+      border-color: map.get($params, "border-color");
+      color: map.get($params, "color");
+    }
+  }
+
+  .#{variables.$prefix}label__icon {
+    color: variables.$background-contrast;
+    font-size: $label-font-size;
+    margin-left: math.div(variables.$spacing-sm, 2);
+    transform: translateY(0.1rem);
+  }
+}

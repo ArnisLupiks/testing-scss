@@ -1,0 +1,6 @@
+@import '../variables/variables';
+@import '../mixins/label';
+
+.#{$prefix}label {
+  @include label;
+}
