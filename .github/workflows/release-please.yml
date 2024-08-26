@@ -51,7 +51,7 @@ jobs:
         if: ${{ steps.release.outputs.release_created  == 'true' }}
         run: |
           echo "Starting the publish process..."
-          if yarn publish --access public; then
+          if yarn publish --access public dist; then
             echo "Publish successful!"
           else
             echo "Publish failed!" >&2
