@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.9.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.8.0...testing-scss-v1.9.0) (2024-08-26)
+
+
+### Features
+
+* **config:** 5555 added package.json to dist folder ([#88](https://github.com/ArnisLupiks/testing-scss/issues/88)) ([f41c242](https://github.com/ArnisLupiks/testing-scss/commit/f41c24207e4d9ce6f8625672026dfc8bd5d5b2ca))
+
 ## [1.8.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.7.0...testing-scss-v1.8.0) (2024-08-23)
 
 
