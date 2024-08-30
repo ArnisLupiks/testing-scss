@@ -60,6 +60,33 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+       # zip the dist folder and publish
+      - name: Zip dist folder
+        if: ${{ steps.release.outputs.release_created  == 'true' }}
+        run: |
+          echo "Starting the zip process..."
+          if cd dist && zip -r ./release.zip ./*; then
+            echo "zip successful!"
+          else
+            echo "zip failed!" >&2
+            exit 1
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Upload the zip file to the release 
+      - name: Upload Zip assets
+        if: ${{ steps.release.outputs.release_created  == 'true' }}
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./release.zip
+          asset_name: design-css.${{ steps.release.outputs.tag_name }}.zip
+          asset_content_type: application/zip
+
+
       - name: Publish documentation
         if: ${{ steps.release.outputs.release_created  == 'true' }}
         uses: peaceiris/actions-gh-pages@v4
