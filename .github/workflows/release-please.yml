@@ -61,7 +61,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-       # zip the dist folder and publish
+      # zip the dist folder and publish
       - name: Zip dist folder
         if: ${{ steps.release.outputs.release_created  == 'true' }}
         run: |
@@ -87,7 +87,7 @@ jobs:
           asset_name: ${{ steps.release.outputs.tag_name }}.zip
           asset_content_type: application/zip
 
-
+      # Publish Storybook 
       - name: Publish documentation
         if: ${{ steps.release.outputs.release_created  == 'true' }}
         uses: peaceiris/actions-gh-pages@v4

@@ -33,12 +33,6 @@ module.exports = {
   ],
 
   appendBranchNameToCommitMessage: false,
-  allowTicketNumber: true,
-  isTicketNumberRequired: true,
-  // Limit ticket number to numbers
-  ticketNumberRegExp: "\\d+",
-  // Append ticket number to commit message
-  appendTicketNumber: true,
   isSubjectEmpty: false,
   questions: {
     subject: {
@@ -60,7 +54,7 @@ module.exports = {
       "List any AZURE BOARDS ISSUES CLOSED by this change (optional). E.g.: AB#1234, AB#12344:\n",
     confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
-  allowCustomScopes: false,
+  allowCustomScopes: true,
   allowBreakingChanges: ["feat", "fix", "refactor"],
   // limit subject length
   subjectLimit: 100,

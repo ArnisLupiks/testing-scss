@@ -39,7 +39,8 @@
 // @import "components/header";
 
 @import "components/avatar";
-@import "components/header-branded";
+@import "components/_header-branded";
+// @use "components/_header-branded";
 @import "components/tooltip";
 
 
