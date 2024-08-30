@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.10.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.9.0...testing-scss-v1.10.0) (2024-08-30)
+
+
+### Features
+
+* **config:** 2 added zip file to release ([#90](https://github.com/ArnisLupiks/testing-scss/issues/90)) ([d1b183a](https://github.com/ArnisLupiks/testing-scss/commit/d1b183ab85b3e60aa271fe6a22311ea74dba984c))
+
 ## [1.9.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.8.0...testing-scss-v1.9.0) (2024-08-26)
 
 
