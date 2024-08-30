@@ -11,6 +11,7 @@ const require = createRequire(import.meta.url);
 // Set the Sass compiler
 const sass = require("gulp-sass")(require("sass"));
 
+// compiles the scss files to css and minified css files
 gulp.task("compileSass", function (done) {
   return src("scss/**/*.scss")
     .pipe(sass().on("error", sass.logError))
@@ -31,10 +32,12 @@ gulp.task("compileSass", function (done) {
     .on("end", done);
 });
 
+// watches for changes in the scss files and compiles them to css when a change is detected 
 gulp.task("watchFiles", function () {
   watch(["scss/**/*.scss"], series("compileSass"));
 });
 
+// changes the url of the fonts in the css file to be relative to the css file location
 gulp.task("changeUrl", async function () {
   const { default: filter } = await import("gulp-filter");
   var themeComponentsFilter = filter(["dist/index.css", "dist/index.min.css"], {
@@ -53,6 +56,7 @@ gulp.task("changeUrl", async function () {
     .pipe(dest("dist"));
 });
 
+// prepares the package.json file for distribution
 gulp.task("copyPackageJson", async function () {
   return src("package.json")
     .pipe(
@@ -68,4 +72,5 @@ gulp.task("copyPackageJson", async function () {
     .pipe(dest("dist"));
 });
 
+// copies the assets folder to the dist folder
 gulp.task("default", series("compileSass", "watchFiles"));
