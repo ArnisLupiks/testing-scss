@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.10.2](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.10.1...testing-scss-v1.10.2) (2024-08-30)
+
+
+### Bug Fixes
+
+* **config:** 3 another fix ([#94](https://github.com/ArnisLupiks/testing-scss/issues/94)) ([038c97c](https://github.com/ArnisLupiks/testing-scss/commit/038c97c1613a01d6230c88f1aea2391b833aa951))
+
 ## [1.10.1](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.10.0...testing-scss-v1.10.1) (2024-08-30)
 
 
