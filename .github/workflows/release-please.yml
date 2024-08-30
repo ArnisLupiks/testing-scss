@@ -49,6 +49,7 @@ jobs:
       # Publish to Github's NPM registry
       - name: Publish to Github NPM registry
         if: ${{ steps.release.outputs.release_created  == 'true' }}
+        id: create_release
         run: |
           echo "Starting the publish process..."
           if yarn publish --access public dist; then
@@ -83,7 +84,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./release.zip
-          asset_name: design-css.${{ steps.release.outputs.tag_name }}.zip
+          asset_name: ${{ steps.release.outputs.tag_name }}.zip
           asset_content_type: application/zip
 
 
