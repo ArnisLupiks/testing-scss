@@ -4,16 +4,8 @@ module.exports = {
     { value: "fix", name: "fix:      A bug fix" },
     { value: "docs", name: "docs:     Documentation only changes" },
     {
-      value: "style",
-      name: "style:    Changes that do not affect the meaning of the code\n            (white-space, formatting, missing semi-colons, etc)",
-    },
-    {
       value: "refactor",
       name: "refactor: A code change that neither fixes a bug nor adds a feature",
-    },
-    {
-      value: "perf",
-      name: "perf:     A code change that improves performance",
     },
     { value: "test", name: "test:     Adding missing tests" },
     {
@@ -54,7 +46,7 @@ module.exports = {
       "List any AZURE BOARDS ISSUES CLOSED by this change (optional). E.g.: AB#1234, AB#12344:\n",
     confirmCommit: "Are you sure you want to proceed with the commit above?",
   },
-  allowCustomScopes: true,
+  allowCustomScopes: false,
   allowBreakingChanges: ["feat", "fix", "refactor"],
   // limit subject length
   subjectLimit: 100,
