@@ -74,5 +74,8 @@
   ],
   "bugs": {
     "url": "https://github.com/arnislupiks/testing-scss/issues"
+  },
+  "storybook": {
+    "url": "https://main--66e2b672791b5320e8cdd018.chromatic.com"
   }
 }

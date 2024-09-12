@@ -14,5 +14,14 @@ const config: StorybookConfig = {
     name: "@storybook/html-vite",
     options: {},
   },
+  refs: {
+    // 👇 Upper-case characters not supported in the refs key
+    "chromatic-published-storybook": {
+      // The title of your Storybook
+      title: "Design System",
+      // The url provided by Chromatic when it was published
+      url: "https://main--66e2b672791b5320e8cdd018.chromatic.com",
+    },
+  },
 };
 export default config;
