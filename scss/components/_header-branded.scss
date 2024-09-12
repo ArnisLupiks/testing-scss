@@ -45,7 +45,7 @@
     .#{$prefix}application-header__left {
       align-items: center;
       display: flex;
-      gap: 0.5rem;
+      gap: 1rem;
   
       .#{$prefix}application-header__logo {
         height: var(--apphead-logo-height);
