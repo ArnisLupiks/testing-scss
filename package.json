@@ -27,7 +27,7 @@
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
     "sass": "sass scss/index.scss:dist/css/design-system-verbose.css",
     "prepublishOnly": "yarn gulp-compile && yarn copy-assets",
-    "chromatic": "npx chromatic --only-changed"
+    "chromatic": "npx chromatic --only-changed --storybook-url https://arnislupiks.github.io/testing-scss/?path=/docs/configure-your-project--docs"
   },
   "author": "",
   "license": "ISC",
