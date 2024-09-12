@@ -19,7 +19,7 @@
     "build-dev": "yarn gulp-compile && yarn copy-assets && yarn gulp-changeUrl  && yarn build-storybook && yarn gulp-copy-package",
     "build": "yarn build-css && yarn copy-assets && yarn build-storybook",
     "build-css": "yarn clean && yarn sass && yarn sass-mini",
-    "build-storybook": "yarn build-story -c .storybook -o dist-storybook/sb",
+    "build-storybook": "yarn clean && yarn build-story -c .storybook -o dist-storybook/sb",
     "copy-assets": "shx cp -r scss/assets dist/assets",
     "copy-package": "shx cp package.json dist/",
     "clean": "rimraf dist dist-storybook*",
