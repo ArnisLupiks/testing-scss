@@ -25,3 +25,9 @@ jobs:
 
       - name: Build package
         run: yarn build-dev
+
+      - name: Run Chromatic
+        uses: chromaui/action@v1
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          onlyChanged: true
