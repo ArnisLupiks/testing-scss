@@ -30,6 +30,6 @@ jobs:
         uses: chromaui/action@v1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-          token: ${{ secrets.GITHUB_TOKEN }}
+          workingDir: dist-storybook
           onlyChanged: true
           exitZeroOnChanges: true
