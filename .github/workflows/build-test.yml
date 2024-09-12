@@ -29,10 +29,11 @@ jobs:
         run: yarn build-dev
 
       - name: Run Chromatic
-        uses: chromaui/action@v1
+        uses: chromaui/action@latest
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          workingDir: './dist-storybook/sb'
-          onlyChanged: true
+          workingDir: 'dist-storybook/sb'
           exitZeroOnChanges: true
+          exitOnceUploaded: true
+          onlyChanged: true
