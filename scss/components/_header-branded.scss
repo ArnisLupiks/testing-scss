@@ -19,98 +19,98 @@
       @include tooltip-position(var(--apphead-link-tooltip-position));
     }
   
-    ul {
-      @include list;
-    }
+    // ul {
+    //   @include list;
+    // }
   
-    .#{$prefix}grid__container {
-      display: flex;
-    }
+    // .#{$prefix}grid__container {
+    //   display: flex;
+    // }
   
-    .#{$prefix}dropdown {
-      font-size: 1rem;
-      position: absolute;
-      right: 0.25rem;
-      top: 2.85rem;
+    // .#{$prefix}dropdown {
+    //   font-size: 1rem;
+    //   position: absolute;
+    //   right: 0.25rem;
+    //   top: 2.85rem;
   
-      .#{$prefix}icon {
-        top: 0;
-      }
-    }
+    //   .#{$prefix}icon {
+    //     top: 0;
+    //   }
+    // }
   
-    .#{$prefix}select {
-      flex: 1;
-    }
+    // .#{$prefix}select {
+    //   flex: 1;
+    // }
   
-    .#{$prefix}application-header__left {
-      align-items: center;
-      display: flex;
-      gap: 1rem;
+    // .#{$prefix}application-header__left {
+    //   align-items: center;
+    //   display: flex;
+    //   gap: 1rem;
   
-      .#{$prefix}application-header__logo {
-        height: var(--apphead-logo-height);
-        width: calc(var(--apphead-logo-width) + 1.0625rem);
-        background-image: var(--apphead-logo);
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
+    //   .#{$prefix}application-header__logo {
+    //     height: var(--apphead-logo-height);
+    //     width: calc(var(--apphead-logo-width) + 1.0625rem);
+    //     background-image: var(--apphead-logo);
+    //     background-repeat: no-repeat;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: flex-end;
   
-        @media (max-width: map-get($breakpoints, "md")) {
-          width: var(--apphead-logo-width);
-        }
+    //     @media (max-width: map-get($breakpoints, "md")) {
+    //       width: var(--apphead-logo-width);
+    //     }
   
-        @media (min-width: map-get($breakpoints, "md")) {
-          &::after {
-            display: var(--apphead-separator-display);
-            width: 0.0625rem;
-            height: var(--apphead-logo-border-height);
-            background-color: var(--apphead-logo-border-color);
-            font-size: 0.0625rem;
-            content: "";
-          }
-        }
-      }
+    //     @media (min-width: map-get($breakpoints, "md")) {
+    //       &::after {
+    //         display: var(--apphead-separator-display);
+    //         width: 0.0625rem;
+    //         height: var(--apphead-logo-border-height);
+    //         background-color: var(--apphead-logo-border-color);
+    //         font-size: 0.0625rem;
+    //         content: "";
+    //       }
+    //     }
+    //   }
   
-      a.#{$prefix}application-header__app_menu {
-        padding: var(--apphead-appmenu-padding);
-        color: var(--apphead-appmenu-color);
-        display: flex;
-        @include tooltip-position(var(--apphead-appmenu-tooltip-position));
+    //   a.#{$prefix}application-header__app_menu {
+    //     padding: var(--apphead-appmenu-padding);
+    //     color: var(--apphead-appmenu-color);
+    //     display: flex;
+    //     @include tooltip-position(var(--apphead-appmenu-tooltip-position));
   
-        i.ul-icon {
-          color: inherit;
-          font-size: var(--apphead-appmenu-size);
-        }
+    //     i.ul-icon {
+    //       color: inherit;
+    //       font-size: var(--apphead-appmenu-size);
+    //     }
   
-        &:hover .#{$prefix}icon {
-          color: var(--apphead-link-color-hover);
-        }
-        &:active .#{$prefix}icon {
-          color: var(--apphead-link-color-active);
-        }
-        &:focus .#{$prefix}icon {
-          color: var(--apphead-link-color-focus);
-        }
-        &:disabled .#{$prefix}icon {
-          color: var(--apphead-link-color-disabled);
-        }
-      }
+    //     &:hover .#{$prefix}icon {
+    //       color: var(--apphead-link-color-hover);
+    //     }
+    //     &:active .#{$prefix}icon {
+    //       color: var(--apphead-link-color-active);
+    //     }
+    //     &:focus .#{$prefix}icon {
+    //       color: var(--apphead-link-color-focus);
+    //     }
+    //     &:disabled .#{$prefix}icon {
+    //       color: var(--apphead-link-color-disabled);
+    //     }
+    //   }
   
-      .#{$prefix}application-header__appname {
-        display: var(--apphead-appname-display);
-        color: var(--apphead-appname-color);
-        font-family: "Poppins", "Open Sans", Arial, sans-serif;
-        font-size: var(--apphead-appname-font-size);
-        font-weight: var(--apphead-appname-font-weight);
-        line-height: 1;
-        margin: 0;
+    //   .#{$prefix}application-header__appname {
+    //     display: var(--apphead-appname-display);
+    //     color: var(--apphead-appname-color);
+    //     font-family: "Poppins", "Open Sans", Arial, sans-serif;
+    //     font-size: var(--apphead-appname-font-size);
+    //     font-weight: var(--apphead-appname-font-weight);
+    //     line-height: 1;
+    //     margin: 0;
   
-        a {
-          color: inherit;
-        }
-      }
-    }
+    //     a {
+    //       color: inherit;
+    //     }
+    //   }
+    // }
   
     .#{$prefix}application-header__right {
       display: flex;
