@@ -72,30 +72,30 @@
         }
       }
   
-      a.#{$prefix}application-header__app_menu {
-        padding: var(--apphead-appmenu-padding);
-        color: var(--apphead-appmenu-color);
-        display: flex;
-        @include tooltip-position(var(--apphead-appmenu-tooltip-position));
+      // a.#{$prefix}application-header__app_menu {
+      //   padding: var(--apphead-appmenu-padding);
+      //   color: var(--apphead-appmenu-color);
+      //   display: flex;
+      //   @include tooltip-position(var(--apphead-appmenu-tooltip-position));
   
-        i.ul-icon {
-          color: inherit;
-          font-size: var(--apphead-appmenu-size);
-        }
+      //   i.ul-icon {
+      //     color: inherit;
+      //     font-size: var(--apphead-appmenu-size);
+      //   }
   
-        &:hover .#{$prefix}icon {
-          color: var(--apphead-link-color-hover);
-        }
-        &:active .#{$prefix}icon {
-          color: var(--apphead-link-color-active);
-        }
-        &:focus .#{$prefix}icon {
-          color: var(--apphead-link-color-focus);
-        }
-        &:disabled .#{$prefix}icon {
-          color: var(--apphead-link-color-disabled);
-        }
-      }
+      //   &:hover .#{$prefix}icon {
+      //     color: var(--apphead-link-color-hover);
+      //   }
+      //   &:active .#{$prefix}icon {
+      //     color: var(--apphead-link-color-active);
+      //   }
+      //   &:focus .#{$prefix}icon {
+      //     color: var(--apphead-link-color-focus);
+      //   }
+      //   &:disabled .#{$prefix}icon {
+      //     color: var(--apphead-link-color-disabled);
+      //   }
+      // }
   
       .#{$prefix}application-header__appname {
         display: var(--apphead-appname-display);

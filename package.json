@@ -27,7 +27,7 @@
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
     "sass": "sass scss/index.scss:dist/css/design-system-verbose.css",
     "prepublishOnly": "yarn gulp-compile && yarn copy-assets",
-    "chromatic": "npx chromatic --project-token=chpt_41f76654ce8bdcf"
+    "chromatic": "npx chromatic --only-changed"
   },
   "author": "",
   "license": "ISC",
