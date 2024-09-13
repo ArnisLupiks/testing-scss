@@ -33,7 +33,7 @@ type Story = StoryObj<ButtonProps>;
 export const Primary: Story = {
   args: {
     primary: true,
-    label: 'Button Big',
+    label: 'Button',
   },
 };
 
