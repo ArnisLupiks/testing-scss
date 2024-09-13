@@ -1,11 +1,9 @@
 # This script tests that the main branch builds correctly
 # and passes the test suite.
 
-name: Build
+name: Check Build and Chromatic
 
-on:
-  pull_request:
-    branches: [main]
+on: push
 
 jobs:
   build-and-test:
