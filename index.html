@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>storybook - Storybook</title>
+    <title>@storybook/core - Storybook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     
@@ -67,6 +67,8 @@
     <link href="./sb-addons/interactions-9/manager-bundle.js" rel="modulepreload" />
     
     <link href="./sb-addons/viewport-10/manager-bundle.js" rel="modulepreload" />
+    
+    <link href="./sb-addons/chromatic-com-storybook-11/manager-bundle.js" rel="modulepreload" />
        
 
     <style>
@@ -92,7 +94,14 @@
         
       
         
-          window['REFS'] = {};
+          window['REFS'] = {
+  "chromatic-published-storybook": {
+    "title": "Design System",
+    "url": "https://main--66e2b672791b5320e8cdd018.chromatic.com",
+    "id": "chromatic-published-storybook",
+    "type": "server-checked"
+  }
+};
         
       
         
@@ -169,6 +178,8 @@
         import './sb-addons/interactions-9/manager-bundle.js';
       
         import './sb-addons/viewport-10/manager-bundle.js';
+      
+        import './sb-addons/chromatic-com-storybook-11/manager-bundle.js';
       
       
       import './sb-manager/runtime.js';
