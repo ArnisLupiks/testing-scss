@@ -1,0 +1,33 @@
+# This script tests that the main branch builds correctly
+# and passes the test suite.
+
+name: Check Build and Chromatic
+
+on: push
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install npm packages
+        run: yarn --frozen-lockfile
+
+      - name: Build package
+        run: yarn build-dev
+
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          onlyChanged: true

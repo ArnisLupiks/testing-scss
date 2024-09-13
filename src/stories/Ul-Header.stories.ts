@@ -40,7 +40,7 @@ const meta = {
           <i class="ul-icon material-icons">apps</i>
           <span class="ul-tooltip -bottom">Other Applications</span>
         </a>
-        <h1 class="ul-application-header__appname"><a href="#">Product Name</a></h1>
+        <h1 class="ul-application-header__appname"><a href="#">Product Names</a></h1>
       </div>
       <div class="ul-application-header__right">
         <ul>

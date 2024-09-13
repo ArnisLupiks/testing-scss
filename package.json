@@ -6,7 +6,7 @@
   "homepage": "https://github.com/arnislupiks/testing-scss#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arnislupiks/testing-scss.git"
+    "url": "git+https://github.com/arnislupiks/testing-scss.git"
   },
   "scripts": {
     "gulp": "gulp",
@@ -15,18 +15,19 @@
     "gulp-copy-package": "gulp copyPackageJson",
     "cz": "cz",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "build-dev": "yarn gulp-compile && yarn copy-assets && yarn gulp-changeUrl  && yarn build-storybook-2 && yarn gulp-copy-package",
-    "build": "yarn build-css && yarn copy-assets && yarn build-storybook-2",
+    "build-story": "storybook build",
+    "build-dev": "yarn clean && yarn gulp-compile && yarn copy-assets && yarn gulp-changeUrl  && yarn build-storybook && yarn gulp-copy-package",
+    "build": "yarn build-css && yarn copy-assets && yarn build-storybook",
     "build-css": "yarn clean && yarn sass && yarn sass-mini",
-    "build-storybook-2": "yarn build-storybook -c .storybook -o dist-storybook/sb",
+    "build-storybook": "yarn build-story -c .storybook -o dist-storybook/sb",
     "copy-assets": "shx cp -r scss/assets dist/assets",
     "copy-package": "shx cp package.json dist/",
     "clean": "rimraf dist dist-storybook*",
     "sass-mini": "sass **/*.scss dist/css/ --style compressed",
     "sass-mini-components": "sass scss/**/*.scss:dist/css --style compressed",
     "sass": "sass scss/index.scss:dist/css/design-system-verbose.css",
-    "prepublishOnly": "yarn gulp-compile && yarn copy-assets"
+    "prepublishOnly": "yarn gulp-compile && yarn copy-assets",
+    "chromatic": "npx chromatic --exit-zero-on-changes"
   },
   "author": "",
   "license": "ISC",
@@ -70,5 +71,8 @@
   "files": [
     "dist/",
     "index.css"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/arnislupiks/testing-scss/issues"
+  }
 }
