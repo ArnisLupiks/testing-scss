@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.11.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.10.5...testing-scss-v1.11.0) (2024-09-13)
+
+
+### Features
+
+* **config:** added Chromatic testing ([#104](https://github.com/ArnisLupiks/testing-scss/issues/104)) ([d56e3e6](https://github.com/ArnisLupiks/testing-scss/commit/d56e3e61a26252f7999cb3d297314ccd32f24c4b))
+
 ## [1.10.5](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.10.4...testing-scss-v1.10.5) (2024-08-30)
 
 
