@@ -17,8 +17,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20.x
-          registry-url: https://registry.npmjs.org/
+          node-version: 20
 
       - name: Install npm packages
         run: yarn --frozen-lockfile
@@ -31,7 +30,4 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
-          workingDir: 'dist-storybook/sb'
-          exitZeroOnChanges: true
-          exitOnceUploaded: true
           onlyChanged: true
