@@ -1,399 +1,204 @@
 .#{$prefix}application-header {
-    box-sizing: border-box;
+  align-items: center;
+  background-color: var(--apphead-header-background);
+  border-bottom: var(--apphead-header-border-bottom);
+  box-shadow: var(--apphead-header-shadow);
+  box-sizing: border-box;
+  display: flex;
+  height: var(--apphead-header-height);
+  padding: var(--apphead-header-padding);
+
+  a {
+    text-decoration: none;
+  }
+
+  .#{$prefix}application-header__link,
+  .#{$prefix}application-header__app_menu {
+    font-weight: var(--apphead-item-font-weight);
+    padding: pxtorem(5);
+
+    @include tooltip-position(var(--apphead-link-tooltip-position));
+  }
+
+  ul {
+    @include list;
+  }
+
+  .#{$prefix}grid__container {
     display: flex;
-    background-color: var(--apphead-header-background);
-    border-bottom: var(--apphead-header-border-bottom);
-    box-shadow: var(--apphead-header-shadow);
-    padding: var(--apphead-header-padding);
-    height: var(--apphead-header-height);
+  }
+
+  .#{$prefix}dropdown {
+    font-size: 1rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 2.85rem;
+
+    .#{$prefix}icon {
+      top: 0;
+    }
+  }
+
+  .#{$prefix}select {
+    flex: 1;
+  }
+
+  .#{$prefix}application-header__left {
     align-items: center;
-  
-    a {
-      text-decoration: none;
-    }
-  
-    .#{$prefix}application-header__link,
-    .#{$prefix}application-header__app_menu {
-      font-weight: var(--apphead-item-font-weight);
-      padding: pxtorem(5);
-      @include tooltip-position(var(--apphead-link-tooltip-position));
-    }
-  
-    ul {
-      @include list;
-    }
-  
-    .#{$prefix}grid__container {
-      display: flex;
-    }
-  
-    .#{$prefix}dropdown {
-      font-size: 1rem;
-      position: absolute;
-      right: 0.25rem;
-      top: 2.85rem;
-  
-      .#{$prefix}icon {
-        top: 0;
-      }
-    }
-  
-    .#{$prefix}select {
-      flex: 1;
-    }
-  
-    .#{$prefix}application-header__left {
+    display: flex;
+    gap: 1rem;
+
+    .#{$prefix}application-header__logo {
       align-items: center;
+      background-image: var(--apphead-logo);
+      background-repeat: no-repeat;
       display: flex;
-      gap: 1rem;
-  
-      .#{$prefix}application-header__logo {
-        height: var(--apphead-logo-height);
-        width: calc(var(--apphead-logo-width) + 1.0625rem);
-        background-image: var(--apphead-logo);
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-  
-        @media (max-width: map-get($breakpoints, "md")) {
-          width: var(--apphead-logo-width);
-        }
-  
-        @media (min-width: map-get($breakpoints, "md")) {
-          &::after {
-            display: var(--apphead-separator-display);
-            width: 0.0625rem;
-            height: var(--apphead-logo-border-height);
-            background-color: var(--apphead-logo-border-color);
-            font-size: 0.0625rem;
-            content: "";
-          }
-        }
-      }
-  
-      a.#{$prefix}application-header__app_menu {
-        padding: var(--apphead-appmenu-padding);
-        color: var(--apphead-appmenu-color);
-        display: flex;
-        @include tooltip-position(var(--apphead-appmenu-tooltip-position));
-  
-        i.ul-icon {
-          color: inherit;
-          font-size: var(--apphead-appmenu-size);
-        }
-  
-        &:hover .#{$prefix}icon {
-          color: var(--apphead-link-color-hover);
-        }
-        &:active .#{$prefix}icon {
-          color: var(--apphead-link-color-active);
-        }
-        &:focus .#{$prefix}icon {
-          color: var(--apphead-link-color-focus);
-        }
-        &:disabled .#{$prefix}icon {
-          color: var(--apphead-link-color-disabled);
-        }
-      }
-  
-      .#{$prefix}application-header__appname {
-        display: var(--apphead-appname-display);
-        color: var(--apphead-appname-color);
-        font-family: "Poppins", "Open Sans", Arial, sans-serif;
-        font-size: var(--apphead-appname-font-size);
-        font-weight: var(--apphead-appname-font-weight);
-        line-height: 1;
-        margin: 0;
-  
-        a {
-          color: inherit;
-        }
-      }
-    }
-  
-    .#{$prefix}application-header__right {
-      display: flex;
-      flex: 1;
+      height: var(--apphead-logo-height);
       justify-content: flex-end;
-      align-items: center;
-      gap: 0;
-      box-sizing: content-box;
-  
-      ul {
-        align-items: center;
-        display: flex;
-        margin: 0;
-  
-        li {
-          a.#{$prefix}application-header__link {
-            padding: var(--apphead-link-outer-padding);
-            font-size: var(--apphead-link-fontsize);
-            display: block;
-  
-            div {
-              position: relative;
-              width: var(--apphead-link-fontsize);
-              height: var(--apphead-link-fontsize);
-              padding: var(--apphead-link-inner-padding);
-              border-radius: var(--apphead-link-border-radius);
-              background-color: var(--apphead-link-background-color);
-  
-              .#{$prefix}icon {
-                color: var(--apphead-link-color);
-                font-size: var(--apphead-link-size);
-                position: relative;
-              }
-            }
-  
-            &:hover div {
-              background-color: var(--apphead-link-background-color-hover);
-              bottom: var(--apphead-link-offset-hover);
-            }
-            &:active div {
-              background-color: var(--apphead-link-background-color-active);
-              bottom: var(--apphead-link-offset-hover);
-            }
-            &:focus div {
-              background-color: var(--apphead-link-background-color-focus);
-            }
-            &:disabled div {
-              background-color: var(--apphead-link-background-color-disabled);
-            }
-  
-            &:hover div .#{$prefix}icon {
-              color: var(--apphead-link-color-hover);
-            }
-            &:active div .#{$prefix}icon {
-              color: var(--apphead-link-color-active);
-            }
-            &:focus div .#{$prefix}icon {
-              color: var(--apphead-link-color-focus);
-            }
-            &:disabled div .#{$prefix}icon {
-              color: var(--apphead-link-color-disabled);
-            }
-          }
+      width: calc(var(--apphead-logo-width) + 1.0625rem);
+
+      @media (max-width: map.get($breakpoints, 'md')) {
+        width: var(--apphead-logo-width);
+      }
+
+      @media (min-width: map.get($breakpoints, 'md')) {
+        &::after {
+          background-color: var(--apphead-logo-border-color);
+          content: '';
+          display: var(--apphead-separator-display);
+          font-size: 0.0625rem;
+          height: var(--apphead-logo-border-height);
+          width: 0.0625rem;
         }
       }
-  
-      a.#{$prefix}application-header__avatar {
-        padding: var(--apphead-avatar-padding);
+    }
+
+    a.#{$prefix}application-header__app_menu {
+      color: var(--apphead-appmenu-color);
+      display: flex;
+      padding: var(--apphead-appmenu-padding);
+
+      @include tooltip-position(var(--apphead-appmenu-tooltip-position));
+
+      i.ul-icon {
+        color: inherit;
+        font-size: var(--apphead-appmenu-size);
+      }
+
+      &:hover .#{$prefix}icon {
+        color: var(--apphead-link-color-hover);
+      }
+      &:active .#{$prefix}icon {
+        color: var(--apphead-link-color-active);
+      }
+      &:focus .#{$prefix}icon {
+        color: var(--apphead-link-color-focus);
+      }
+      &:disabled .#{$prefix}icon {
+        color: var(--apphead-link-color-disabled);
       }
     }
-  
-    .#{$prefix}application-header__left,
-    .#{$prefix}application-header__right ul li {
-      position: relative;
-  
-      a span.#{$prefix}tooltip {
-        display: none;
-        z-index: 1;
-      }
-  
-      a:hover span.#{$prefix}tooltip,
-      span.#{$prefix}tooltip:hover {
-        display: inherit;
+
+    .#{$prefix}application-header__appname {
+      color: var(--apphead-appname-color);
+      display: var(--apphead-appname-display);
+      font-family: Poppins, 'Open Sans', Arial, sans-serif;
+      font-size: var(--apphead-appname-font-size);
+      font-weight: var(--apphead-appname-font-weight);
+      line-height: 1;
+      margin: 0;
+
+      a {
+        color: inherit;
       }
     }
   }
-  .#{$prefix}application-header {
-    box-sizing: border-box;
-    display: flex;
-    background-color: var(--apphead-header-background);
-    border-bottom: var(--apphead-header-border-bottom);
-    box-shadow: var(--apphead-header-shadow);
-    padding: var(--apphead-header-padding);
-    height: var(--apphead-header-height);
+
+  .#{$prefix}application-header__right {
     align-items: center;
-  
-    a {
-      text-decoration: none;
-    }
-  
-    .#{$prefix}application-header__link,
-    .#{$prefix}application-header__app_menu {
-      font-weight: var(--apphead-item-font-weight);
-      padding: pxtorem(5);
-      @include tooltip-position(var(--apphead-link-tooltip-position));
-    }
-  
+    box-sizing: content-box;
+    display: flex;
+    flex: 1;
+    gap: 0;
+    justify-content: flex-end;
+
     ul {
-      @include list;
-    }
-  
-    .#{$prefix}grid__container {
-      display: flex;
-    }
-  
-    .#{$prefix}dropdown {
-      font-size: 1rem;
-      position: absolute;
-      right: 0.25rem;
-      top: 2.85rem;
-  
-      .#{$prefix}icon {
-        top: 0;
-      }
-    }
-  
-    .#{$prefix}select {
-      flex: 1;
-    }
-  
-    .#{$prefix}application-header__left {
       align-items: center;
       display: flex;
-      gap: 0.5rem;
-  
-      .#{$prefix}application-header__logo {
-        height: var(--apphead-logo-height);
-        width: calc(var(--apphead-logo-width) + 1.0625rem);
-        background-image: var(--apphead-logo);
-        background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-  
-        @media (max-width: map-get($breakpoints, "md")) {
-          width: var(--apphead-logo-width);
-        }
-  
-        @media (min-width: map-get($breakpoints, "md")) {
-          &::after {
-            display: var(--apphead-separator-display);
-            width: 0.0625rem;
-            height: var(--apphead-logo-border-height);
-            background-color: var(--apphead-logo-border-color);
-            font-size: 0.0625rem;
-            content: "";
-          }
-        }
-      }
-  
-      a.#{$prefix}application-header__app_menu {
-        padding: var(--apphead-appmenu-padding);
-        color: var(--apphead-appmenu-color);
-        display: flex;
-        @include tooltip-position(var(--apphead-appmenu-tooltip-position));
-  
-        i.ul-icon {
-          color: inherit;
-          font-size: var(--apphead-appmenu-size);
-        }
-  
-        &:hover .#{$prefix}icon {
-          color: var(--apphead-link-color-hover);
-        }
-        &:active .#{$prefix}icon {
-          color: var(--apphead-link-color-active);
-        }
-        &:focus .#{$prefix}icon {
-          color: var(--apphead-link-color-focus);
-        }
-        &:disabled .#{$prefix}icon {
-          color: var(--apphead-link-color-disabled);
-        }
-      }
-  
-      .#{$prefix}application-header__appname {
-        display: var(--apphead-appname-display);
-        color: var(--apphead-appname-color);
-        font-family: "Poppins", "Open Sans", Arial, sans-serif;
-        font-size: var(--apphead-appname-font-size);
-        font-weight: var(--apphead-appname-font-weight);
-        line-height: 1;
-        margin: 0;
-  
-        a {
-          color: inherit;
-        }
-      }
-    }
-  
-    .#{$prefix}application-header__right {
-      display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      align-items: center;
-      gap: 0;
-      box-sizing: content-box;
-  
-      ul {
-        align-items: center;
-        display: flex;
-        margin: 0;
-  
-        li {
-          a.#{$prefix}application-header__link {
-            padding: var(--apphead-link-outer-padding);
-            font-size: var(--apphead-link-fontsize);
-            display: block;
-  
-            div {
+      margin: 0;
+
+      li {
+        a.#{$prefix}application-header__link {
+          display: block;
+          font-size: var(--apphead-link-fontsize);
+          padding: var(--apphead-link-outer-padding);
+
+          div {
+            background-color: var(--apphead-link-background-color);
+            border-radius: var(--apphead-link-border-radius);
+            height: var(--apphead-link-fontsize);
+            padding: var(--apphead-link-inner-padding);
+            position: relative;
+            width: var(--apphead-link-fontsize);
+
+            .#{$prefix}icon {
+              color: var(--apphead-link-color);
+              font-size: var(--apphead-link-size);
               position: relative;
-              width: var(--apphead-link-fontsize);
-              height: var(--apphead-link-fontsize);
-              padding: var(--apphead-link-inner-padding);
-              border-radius: var(--apphead-link-border-radius);
-              background-color: var(--apphead-link-background-color);
-  
-              .#{$prefix}icon {
-                color: var(--apphead-link-color);
-                font-size: var(--apphead-link-size);
-                position: relative;
-              }
             }
-  
-            &:hover div {
-              background-color: var(--apphead-link-background-color-hover);
-              bottom: var(--apphead-link-offset-hover);
-            }
-            &:active div {
-              background-color: var(--apphead-link-background-color-active);
-              bottom: var(--apphead-link-offset-hover);
-            }
-            &:focus div {
-              background-color: var(--apphead-link-background-color-focus);
-            }
-            &:disabled div {
-              background-color: var(--apphead-link-background-color-disabled);
-            }
-  
-            &:hover div .#{$prefix}icon {
-              color: var(--apphead-link-color-hover);
-            }
-            &:active div .#{$prefix}icon {
-              color: var(--apphead-link-color-active);
-            }
-            &:focus div .#{$prefix}icon {
-              color: var(--apphead-link-color-focus);
-            }
-            &:disabled div .#{$prefix}icon {
-              color: var(--apphead-link-color-disabled);
-            }
+          }
+
+          &:hover div {
+            background-color: var(--apphead-link-background-color-hover);
+            bottom: var(--apphead-link-offset-hover);
+          }
+
+          &:active div {
+            background-color: var(--apphead-link-background-color-active);
+            bottom: var(--apphead-link-offset-hover);
+          }
+
+          &:focus div {
+            background-color: var(--apphead-link-background-color-focus);
+          }
+
+          &:disabled div {
+            background-color: var(--apphead-link-background-color-disabled);
+          }
+
+          &:hover div .#{$prefix}icon {
+            color: var(--apphead-link-color-hover);
+          }
+          &:active div .#{$prefix}icon {
+            color: var(--apphead-link-color-active);
+          }
+          &:focus div .#{$prefix}icon {
+            color: var(--apphead-link-color-focus);
+          }
+          &:disabled div .#{$prefix}icon {
+            color: var(--apphead-link-color-disabled);
           }
         }
       }
-  
-      a.#{$prefix}application-header__avatar {
-        padding: var(--apphead-avatar-padding);
-      }
     }
-  
-    .#{$prefix}application-header__left,
-    .#{$prefix}application-header__right ul li {
-      position: relative;
-  
-      a span.#{$prefix}tooltip {
-        display: none;
-        z-index: 1;
-      }
-  
-      a:hover span.#{$prefix}tooltip,
-      span.#{$prefix}tooltip:hover {
-        display: inherit;
-      }
+
+    a.#{$prefix}application-header__avatar {
+      padding: var(--apphead-avatar-padding);
     }
   }
-    
+
+  .#{$prefix}application-header__left,
+  .#{$prefix}application-header__right ul li {
+    position: relative;
+
+    a span.#{$prefix}tooltip {
+      display: none;
+      z-index: 1;
+    }
+
+    a:hover span.#{$prefix}tooltip,
+    span.#{$prefix}tooltip:hover {
+      display: inherit;
+    }
+  }
+}

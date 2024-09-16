@@ -39,7 +39,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    label: 'Button one',
   },
 };
 

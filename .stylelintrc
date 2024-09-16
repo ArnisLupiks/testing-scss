@@ -1,0 +1,41 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "plugins": [
+    "stylelint-prettier",
+    "stylelint-order",
+    "stylelint-selector-bem-pattern"
+  ],
+  "rules": {
+    "function-calc-no-unspaced-operator": true,
+    "max-nesting-depth": 6,
+    "order/properties-alphabetical-order": true,
+    "selector-class-pattern": [
+      "^(-)*[a-z]+([a-z0-9-_&]+)*$",
+      { "resolveNestedSelectors": false }
+    ],
+    "selector-type-case": "lower",
+    "selector-type-no-unknown": null,
+    "function-no-unknown": null,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "keyframes-name-pattern": null,
+    "scss/load-no-partial-leading-underscore": null,
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "include",
+          "mixin",
+          "each",
+          "content",
+          "function",
+          "if",
+          "else",
+          "return",
+          "use",
+          "forward",
+          "for"
+        ]
+      }
+    ]
+  }
+}

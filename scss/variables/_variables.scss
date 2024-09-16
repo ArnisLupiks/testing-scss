@@ -23,16 +23,19 @@ $success-hover: #0d470e !default;
 $success-light: #eaf0e9 !default;
 $success-pressed: #093308 !default;
 
+// warning colours
 $warning: #ffa700 !default;
 $warning-hover: #eb9a25 !default;
 $warning-light: #fff4d6 !default;
 $warning-pressed: #d18820 !default;
 
+// danger colours
 $danger: #e12d33 !default;
 $danger-hover: #c01b21 !default;
 $danger-light: #fdf0f2 !default;
 $danger-pressed: #931519 !default;
 
+// info colours
 $info: #096072 !default;
 $info-hover: #054e5d !default;
 $info-light: #e7f4f7 !default;
@@ -51,27 +54,29 @@ $gray-2: #fafafa !default;
 $gray-4: #f5f5f5 !default;
 $gray-8: #ebebeb !default;
 $gray-10: #e6e6e6 !default;
-$gray-20: #cccccc !default;
+$gray-20: #ccc !default;
 $gray-30: #b3b3b3 !default;
-$gray-40: #999999 !default;
+$gray-40: #999 !default;
 $gray-70: #4d4d4d !default;
 $gray-90: #1a1a1a !default;
 
 /* Control colours */
 $primary: #01518a !default;
-$primary-disabled: rgba(1, 81, 138, 0.5) !default;
+$primary-disabled: rgb(1 81 138 / 50%) !default;
 $primary-hover: #003357 !default;
 $primary-light: #ecf5fc !default;
 $primary-pressed: #001524 !default;
 $primary-pressed: #001524 !default;
 
+// secondary colours
 $secondary: #e6e6e6 !default;
-$secondary-disabled: rgba(230, 230, 230, 0.5) !default;
-$secondary-hover: #cccccc !default;
-$secondary-pressed: #999999 !default;
+$secondary-disabled: rgb(230 230 230 / 50%) !default;
+$secondary-hover: #ccc !default;
+$secondary-pressed: #999 !default;
 
+// tertiary colours
 $tertiary: #fffffe !default;
-$tertiary-disabled: rgba(255, 255, 255, 0.5) !default;
+$tertiary-disabled: rgb(255 255 255 / 50%) !default;
 $tertiary-hover: #000003 !default;
 $tertiary-pressed: #cccccd !default;
 
@@ -82,13 +87,13 @@ $text-link: #01518a !default;
 $text-primary: #3e3e3e !default;
 
 /* UL brand colours */
-$ul-black: #000000 !default;
+$ul-black: #000 !default;
 $ul-red: #CA0123 !default;
 $ul-red-disabled: #DBA1AA !default;
 $ul-red-hover: #9B011B !default;
 $ul-red-light: #F7D9DE !default;
 $ul-red-pressed: #6E0113 !default;
-$ul-white: #ffffff !default;
+$ul-white: #fff !default;
 
 // Temporary patch until colors are published on https://designsystem.ul.com
 $ul-red-hover: #9B011B !default;
@@ -115,6 +120,9 @@ $spacing-md: 1rem;
 $spacing-lg: 2rem;
 $spacing-xl: 4rem;
 
+/*******************************************************************************
+                                    Typography
+ ******************************************************************************/
 $form-border-size: $border-width;
 $form-horizontal-padding: $spacing-md * 0.75;
 $form-vertical-padding: $spacing-md * 0.75;

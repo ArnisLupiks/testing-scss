@@ -1,62 +1,70 @@
-@mixin triangle($size, $color, $padding-offset: 0, $shadow-color: false, $shadow-size: 3px, $shadow-offset: 3px) {
-    &{position: relative;}
-  
-    &[data-triangle-position] {
-      &::after {
-        border: $size solid transparent;
-        content: '';
-        position: absolute;
-      }
+@mixin triangle(
+  $size,
+  $color,
+  $padding-offset: 0,
+  $shadow-color: false,
+  $shadow-size: 3px,
+  $shadow-offset: 3px
+) {
+  & {
+    position: relative;
+  }
+
+  &[data-triangle-position] {
+    &::after {
+      border: $size solid transparent;
+      content: '';
+      position: absolute;
     }
-  
-    &[data-triangle-position='top'] {
-      &::after {
-        border-top-color: $color;
-        left: calc(50% - #{$size});
-        top: 100%;
-  
-        @if ($shadow-color != false) {
-          filter: drop-shadow(0 $shadow-offset $shadow-size $shadow-color);
-        }
-      }
-    }
-  
-    &[data-triangle-position='bottom'] {
-      &::after {
-        border-bottom-color: $color;
-        bottom: 100%;
-        left: calc(50% - #{$size});
-  
-        @if ($shadow-color != false) {
-          filter: drop-shadow(0 (-$shadow-offset) $shadow-size $shadow-color);
-        }
-      }
-    }
-  
-    &[data-triangle-position='right'] {
-      &::after {
-        border-left-color: $color;
-        left: 100%;
-        top: 50%;
-        transform: translate(0, -50%);
-  
-        @if ($shadow-color != false) {
-          filter: drop-shadow($shadow-offset 0 $shadow-size $shadow-color);
-        }
-      }
-    }
-  
-    &[data-triangle-position='left'] {
-      &::after {
-        border-right-color: $color;
-        right: 100%;
-        top: 50%;
-        transform: translate(0, -50%);
-  
-        @if ($shadow-color != false) {
-          filter: drop-shadow(-$shadow-offset 0 $shadow-size $shadow-color);
-        }
+  }
+
+  &[data-triangle-position='top'] {
+    &::after {
+      border-top-color: $color;
+      left: calc(50% - #{$size});
+      top: 100%;
+
+      @if $shadow-color != false {
+        filter: drop-shadow(0 $shadow-offset $shadow-size $shadow-color);
       }
     }
   }
-  
+
+  &[data-triangle-position='bottom'] {
+    &::after {
+      border-bottom-color: $color;
+      bottom: 100%;
+      left: calc(50% - #{$size});
+
+      @if $shadow-color != false {
+        filter: drop-shadow(0 (-$shadow-offset) $shadow-size $shadow-color);
+      }
+    }
+  }
+
+  &[data-triangle-position='right'] {
+    &::after {
+      border-left-color: $color;
+      left: 100%;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      @if $shadow-color != false {
+        filter: drop-shadow($shadow-offset 0 $shadow-size $shadow-color);
+      }
+    }
+  }
+
+  &[data-triangle-position='left'] {
+    &::after {
+      border-right-color: $color;
+      right: 100%;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      @if $shadow-color != false {
+        filter: drop-shadow(-$shadow-offset 0 $shadow-size $shadow-color);
+      }
+    }
+  }
+}
