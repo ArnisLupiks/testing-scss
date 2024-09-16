@@ -1,3 +1,5 @@
+@use 'sass:map';
+
 .#{$prefix}application-header {
   align-items: center;
   background-color: var(--apphead-header-background);
