@@ -4,6 +4,13 @@
 
 - **config**: 125 somehting happened (#14)
 
+## [1.11.1](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.11.0...testing-scss-v1.11.1) (2024-09-16)
+
+
+### Bug Fixes
+
+* **header:** removed spelling ([#106](https://github.com/ArnisLupiks/testing-scss/issues/106)) ([37c20b6](https://github.com/ArnisLupiks/testing-scss/commit/37c20b6f14e10cb0830786bc7a9cb87329899941))
+
 ## [1.11.0](https://github.com/ArnisLupiks/testing-scss/compare/testing-scss-v1.10.5...testing-scss-v1.11.0) (2024-09-13)
 
 
