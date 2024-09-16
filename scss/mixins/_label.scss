@@ -5,12 +5,9 @@
 
 $label-bg: variables.$secondary;
 $label-fg: variables.$background-contrast;
-
 $label-border-color: $label-bg;
 $label-border-radius: variables.$border-radius;
-
 $label-font-size: 0.75rem;
-
 $label-colors: (
   "default": (
     "background": variables.$secondary,

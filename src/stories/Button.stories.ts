@@ -1,4 +1,4 @@
-import type { StoryObj, Meta } from '@storybook/html';
+import type { Meta, StoryObj } from '@storybook/html';
 import { fn } from '@storybook/test';
 import type { ButtonProps } from './Button';
 import { createButton } from './Button';
@@ -39,7 +39,7 @@ export const Primary: Story = {
 
 export const Secondary: Story = {
   args: {
-    label: 'Button',
+    label: 'Button one',
   },
 };
 

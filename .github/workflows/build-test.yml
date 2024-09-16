@@ -3,7 +3,11 @@
 
 name: Check Build and Chromatic
 
-on: push
+on:
+  push:
+    branches-ignore:
+      - main
+      - release-please-*
 
 jobs:
   build-and-test:
@@ -21,6 +25,9 @@ jobs:
 
       - name: Install npm packages
         run: yarn --frozen-lockfile
+
+      - name: Check stylelint
+        run: yarn stylelint
 
       - name: Build package
         run: yarn build-dev

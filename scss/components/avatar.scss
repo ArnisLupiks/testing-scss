@@ -1,6 +1,5 @@
 @use 'sass:math';
 @use "sass:map";
-
 @import '../variables/variables';
 
 $avatar-user-background-color: $secondary-hover;
@@ -23,7 +22,7 @@ $avatar-sizes: (
   large: 3.5rem,
   huge: 4.5rem
 );
-$default-avatar-size: map-get($avatar-sizes, "medium");
+$default-avatar-size: map.get($avatar-sizes, "medium");
 $avatar-padding: 0.125;
 $avatar-width: 1 - (2 * $avatar-padding);
 
@@ -56,6 +55,7 @@ $avatar-width: 1 - (2 * $avatar-padding);
   img {
     border-radius: 50%;
     display: block;
+    
     // image is oversized so it expands over the padding of the containing element.
     // NB: avatar-width is the fraction of the avatar width that isn't padding.
     width: math.div(100%, $avatar-width);
