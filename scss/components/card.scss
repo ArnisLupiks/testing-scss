@@ -1,0 +1,192 @@
+@use 'sass:math';
+@use "sass:map";
+@import '../variables/variables';
+@import '../mixins/defaults';
+@import '../mixins/link';
+
+$card-border: 0.0625rem solid $secondary-hover;
+$card-body-padding: $spacing-md * 1.5;
+$card-body-color: $background-contrast;
+$card-body-font-size: 0.875rem;
+$card-icon-color: $background-contrast;
+$card-title-color: $ul-black;
+$card-actions-padding: $spacing-sm $spacing-md;
+$card-category-font-size: 0.75rem;
+$card-raised-shadow: 0 0.1rem 0.1rem rgba($ul-black, 0.1);
+$card-meta-font-size: 0.75rem;
+$card-meta-filled-background: $background-surface;
+$card-head-subtitle-color: $background-contrast;
+$card-themes: (
+  "eps": (
+    color: $ul-red
+  ),
+  "app": (
+    color: $primary
+  ),
+);
+
+.#{$prefix}card {
+  border: $card-border;
+
+  a {
+    @include link;
+  }
+
+  @include defaults;
+
+  @each $key, $settings in $card-themes {
+    &.-#{$key} {
+      a,
+      .#{$prefix}card__dateWeekday,
+      .#{$prefix}card__categoryLeft {
+        color: map.get($settings, "color");
+      }
+    }
+  }
+
+  &.-raised {
+    box-shadow: $card-raised-shadow;
+  }
+}
+
+.#{$prefix}card__item {
+  padding: $card-body-padding;
+
+  &.-bordered {
+    border-bottom: $card-border;
+    border-top: $card-border;
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.#{$prefix}card__body {
+  color: $card-body-color;
+  font-size: $card-body-font-size;
+
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  .#{$prefix}loading {
+    height: 1rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.#{$prefix}card__date {
+  background: $ul-white;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  bottom: -0.0625rem;
+  left: $spacing-md;
+  padding: $spacing-sm;
+  position: absolute;
+}
+
+.#{$prefix}card__dateWeekday {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.#{$prefix}card__dateMonth {
+  font-size: 0.75rem;
+}
+
+.#{$prefix}card__image {
+  margin-bottom: -0.3rem;
+}
+
+.#{$prefix}card__imageContainer {
+  position: relative;
+
+  .#{$prefix}loading {
+    height: 10rem;
+  }
+}
+
+.#{$prefix}card__actions {
+  align-items: center;
+  display: flex;
+  font-size: $card-category-font-size;
+  padding: $card-actions-padding;
+
+  .#{$prefix}-icon {
+    color: $card-icon-color;
+    transform: translateY(0.1rem);
+  }
+
+  * {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+.#{$prefix}card__actionMain {
+  flex: 1;
+  text-align: right;
+}
+
+.#{$prefix}card__category {
+  display: flex;
+  font-size: $card-category-font-size;
+  justify-content: space-between;
+}
+
+.#{$prefix}card__categoryName {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.#{$prefix}card__categoryDate {
+  color: $background-contrast;
+}
+
+.#{$prefix}card__meta {
+  font-size: $card-meta-font-size;
+  padding: $spacing-sm $card-body-padding;
+
+  &.-filled {
+    background: $card-meta-filled-background;
+  }
+}
+
+.#{$prefix}card__head {
+  &:not(.-bordered) {
+    padding-bottom: 0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .#{$prefix}loading {
+    height: 2rem;
+  }
+}
+
+.#{$prefix}card__headSubtitle {
+  color: $card-head-subtitle-color;
+  margin: 0;
+}
+
+.#{$prefix}card__headAction {
+  cursor: pointer;
+  float: right;
+  margin-top: math.div($spacing-sm, 2);
+}
