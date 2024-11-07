@@ -1,0 +1,11 @@
+@use '../variables/variables';
+
+@mixin link {
+  color: variables.$text-link;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: variables.$text-hover-focus;
+  }
+}
